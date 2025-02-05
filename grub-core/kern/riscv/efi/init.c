@@ -33,7 +33,7 @@ grub_efi_get_time_ms (void)
   grub_uint64_t tmr;
 
 #if __riscv_xlen == 64
-  asm volatile ("rdcycle %0" : "=r" (tmr));
+  asm volatile ("rdcycle %0" : "=r" (tmr))
 #else
   grub_uint32_t lo, hi, tmp;
   asm volatile (

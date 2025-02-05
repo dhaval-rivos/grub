@@ -126,6 +126,7 @@ EXPORT_FUNC (grub_efi_find_configuration_table) (const grub_guid_t *target_guid)
 void *EXPORT_FUNC(grub_efi_get_firmware_fdt)(void);
 grub_err_t EXPORT_FUNC(grub_efi_get_ram_base)(grub_addr_t *);
 #endif
+void *EXPORT_FUNC(grub_efi_get_firmware_fdt)(void);
 #include <grub/file.h>
 grub_err_t grub_arch_efi_linux_load_image_header(grub_file_t file,
                                                 struct linux_arch_kernel_header *lh);

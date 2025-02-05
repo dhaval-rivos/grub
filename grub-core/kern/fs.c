@@ -169,7 +169,7 @@ grub_fs_blocklist_open (grub_file_t file, const char *name)
 	  if (grub_errno != GRUB_ERR_NONE || *p != '+')
 	    {
 	      grub_error (GRUB_ERR_BAD_FILENAME,
-			  N_("invalid file name `%s'"), name);
+			  N_("dd invalid file name `%s'"), name);
 	      goto fail;
 	    }
 	}
@@ -185,7 +185,7 @@ grub_fs_blocklist_open (grub_file_t file, const char *name)
 	  || (*p && *p != ',' && ! grub_isspace (*p)))
 	{
 	  grub_error (GRUB_ERR_BAD_FILENAME,
-		      N_("invalid file name `%s'"), name);
+		      N_("ss invalid file name `%s'"), name);
 	  goto fail;
 	}
 

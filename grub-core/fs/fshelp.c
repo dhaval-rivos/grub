@@ -278,7 +278,7 @@ grub_fshelp_find_file_real (const char *path, grub_fshelp_node_t rootnode,
 
   if (!path || path[0] != '/')
     {
-      return grub_error (GRUB_ERR_BAD_FILENAME, N_("invalid file name `%s'"), path);
+      return grub_error (GRUB_ERR_BAD_FILENAME, N_("hh invalid file name `%s'"), path);
     }
 
   err = go_to_root (&ctx);

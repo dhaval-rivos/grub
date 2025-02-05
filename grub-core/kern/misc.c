@@ -236,7 +236,7 @@ grub_real_dprintf (const char *file, const int line, const char *condition,
 {
   va_list args;
 
-  if (grub_debug_enabled (condition))
+  if (1)
     {
       grub_printf ("%s:%d:%s: ", file, line, condition);
       va_start (args, fmt);
