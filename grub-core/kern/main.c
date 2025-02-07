@@ -305,7 +305,7 @@ grub_main (void)
   grub_machine_init ();
 
   grub_boot_time ("After machine init.");
-
+  grub_printf ("Welcome to GRUB!\n\n");
   /* This breaks flicker-free boot on EFI systems, so disable it there. */
 #ifndef GRUB_MACHINE_EFI
   /* Hello.  */
